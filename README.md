@@ -23,7 +23,7 @@ Un programme en C qui convertit les nombres en leur écriture littérale frança
 ### Compilation
 ```bash
 gcc nombre_en_lettres.c -o nombre_en_lettres
-```bash
+```
 
 ###🚀 Exécution et Exemples d'utilisation**  
 ```bash
