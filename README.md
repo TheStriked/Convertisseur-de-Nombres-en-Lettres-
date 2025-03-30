@@ -1,81 +1,70 @@
-Voici ton texte formaté pour être directement copié-collé dans un fichier `README.md` :  
+# Convertisseur de Nombres en Lettres Françaises
 
-```md
-# **Convertisseur de Nombres en Lettres (Français)**  
+## Description
+Un programme en C qui convertit les nombres en leur écriture littérale française exacte, avec gestion des nombres décimaux et négatifs.
 
-**Un programme en C qui transforme les nombres en leur écriture littérale française.**  
+## Fonctionnalités
+- Conversion précise selon les règles orthographiques françaises
+- Prise en charge des nombres décimaux (utilisant le point comme séparateur)
+- Gestion des nombres négatifs
+- Validation de l'entrée utilisateur
+- Support jusqu'au milliard
 
-## **📝 Description**  
-Ce programme convertit un nombre (entier ou décimal) saisi par l’utilisateur en son équivalent en lettres, conformément aux règles orthographiques françaises. Par exemple :  
-- **123** → *"cent vingt-trois"*  
-- **45,67** → *"quarante-cinq virgule soixante-sept"*  
+## Comment utiliser
 
-### **Fonctionnalités :**  
-✅ **Gestion des nombres positifs et négatifs**  
-✅ **Prise en charge des nombres décimaux (séparateur `.`)**  
-✅ **Conversion précise selon les règles françaises (70 = "soixante-dix", 80 = "quatre-vingts")**  
-✅ **Validation de l’entrée utilisateur**  
+### Prérequis
+- Compilateur C (gcc recommandé)
+- Système d'exploitation Linux/Windows/Mac
 
----
+### Installation
+1. Téléchargez le fichier `nombre_en_lettres.c`
+2. Ouvrez un terminal dans le dossier contenant le fichier
 
-## **📋 Fonctionnement**  
-1. **Saisie du nombre**  
-   - L’utilisateur entre un nombre (ex. `123.45`).  
-   - Le programme vérifie si l’entrée est valide.  
+### Compilation
+```bash
+gcc nombre_en_lettres.c -o nombre_en_lettres
+```bash
 
-2. **Séparation partie entière / décimale**  
-   - Le nombre est divisé en deux parties :  
-     - **Partie entière** (ex. `123` → *"cent vingt-trois"*)  
-     - **Partie décimale** (ex. `45` → *"quarante-cinq"*)  
+###🚀 Exécution et Exemples d'utilisation**  
+```bash
+./nombre_en_lettres
 
-3. **Conversion en lettres**  
-   - Utilisation de tableaux prédéfinis pour les unités, dizaines et centaines.  
-   - Respect des particularités françaises (11-16, 70-99).  
+Donner un nombre : 123
+cent vingt-trois
 
-4. **Affichage du résultat**  
-   - Exemple : `123.45` → *"cent vingt-trois virgule quarante-cinq"*  
+Donner un nombre : 45.67
+quarante-cinq virgule soixante-sept
 
----
+Donner un nombre : -100
+moins cent
+```
 
-## **🚀 Utilisation**  
-1. **Compiler le programme :**  
-   ```sh
-   gcc nombre_en_lettres.c -o nombre_en_lettres
-   ```
-2. **Exécuter :**  
-   ```sh
-   ./nombre_en_lettres
-   ```
-3. **Saisir un nombre :**  
-   ```
-   Donner un nombre : 123.45
-   ```
-4. **Résultat :**  
-   ```
-   cent vingt-trois virgule quarante-cinq
-   ```
+## **🚀 Exécution et Exemples d'utilisation**  
+```bash
+./nombre_en_lettres
+
+Donner un nombre : 123
+cent vingt-trois
+
+Donner un nombre : 45.67
+quarante-cinq virgule soixante-sept
+
+Donner un nombre : -100
+moins cent
+```
 
 ---
 
-## **📌 Exemples de Sortie**  
-| Entrée       | Sortie en Lettres                              |
-|--------------|------------------------------------------------|
-| `42`         | *quarante-deux*                                |
-| `-123.45`    | *moins cent vingt-trois virgule quarante-cinq* |
-| `1000000`    | *un million*                                   |
+## **🤝 Contribuer**  
+
+Les contributions sont les bienvenues ! Veuillez ouvrir une issue ou une pull request pour proposer des améliorations.
+
 
 ---
 
-## **⚙️ Améliorations Possibles**  
-- Prise en charge des **nombres supérieurs au milliard**.  
-- Gestion des **variantes régionales** (Belgique, Suisse).  
-- Interface utilisateur améliorée.  
+## **⚠️ Remarques**  
 
----
-
-### **🎯 Résumé**  
-Un outil pratique pour convertir des nombres en lettres, utile pour :  
-- Les factures et documents financiers.  
-- Les applications éducatives.  
-- La localisation de logiciels.  
+- Les nombres décimaux utilisent le point (.) comme séparateur.
+- Le programme gère correctement les particularités françaises (70 = "soixante-dix", 80 = "quatre-vingts", etc.).
+- La validation rejette les entrées non numériques.
 
